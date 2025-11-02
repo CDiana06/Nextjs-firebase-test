@@ -3,8 +3,8 @@
 import "server-only";
 
 import { cookies } from "next/headers";
-import { initializeServerApp, initializeApp } from "firebase/app";
-
+import { initializeServerApp} from "firebase/app";
+import { initializeApp } from "../firebaseClient";
 import { getAuth } from "firebase/auth";
 
 // Returns an authenticated client SDK instance for use in Server Side Rendering
